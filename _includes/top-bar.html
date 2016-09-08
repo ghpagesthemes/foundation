@@ -1,15 +1,20 @@
 {% include base_path %}
 
+{% assign about_page = site.pages | where:'title','About Page' %}
+{% assign about_page = about_page[0] %}
+{% assign contact_page = site.pages | where:'title','Contact Page' %}
+{% assign contact_page = contact_page[0] %}
+
 <nav class="top-bar">
   <div class="top-bar-left">
     <ul class="menu">
-      <li class="menu-text">{{ site.title }}</li>
+      <li class="menu-text"><a href="{{ base_path }}/">{{ site.title }}</a></li>
     </ul>
   </div>
   <div class="top-bar-right">
     <ul class="menu">
-      <li><a href="{{ base_path }}/about">About</a></li>
-      <li><a href="{{ base_path }}/contact">Contact</a></li>
+      <li><a href="{{ about_page.url | prepend: base_path }}">{{ about_page.title }}</a></li>
+      <li><a href="{{ contact_page.url | prepend: base_path }}">{{ contact_page.title }}</a></li>
     </ul>
   </div>
 </nav>
