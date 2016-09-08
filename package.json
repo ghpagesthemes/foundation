@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "jquery": "^3.1.0",
-    "foundations-sites": "^6.2.3",
+    "foundation-sites": "^6.2.3",
     "svg4everybody": "^2.1.0"
   }
 }
