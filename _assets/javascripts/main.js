@@ -1,9 +1,9 @@
-import './globals/jquery.js';
-import 'foundation-sites/dist/foundation';
 import svg4everybody from 'svg4everybody';
+import './globals/jquery';
+import './globals/foundation';
 import ready from './ready';
 
 ready(() => {
   $(document).foundation();
-  svg4everybody()
+  svg4everybody();
 });
