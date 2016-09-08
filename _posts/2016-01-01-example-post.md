@@ -2,6 +2,7 @@
 title: Example Post
 image: http://placehold.it/850x350
 date: {SLUSH{=now}}
+author: {SLUSH{=author}}
 layout: post
 ---
 

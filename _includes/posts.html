@@ -1,8 +1,8 @@
 {% include base_path %}
 
-<div class="medium-8 columns">
+<div class="medium-8 row columns">
 {% for post in site.posts %}
-  <div class="blog-post">
+  <div class="blog-post row">
     <h3><a href="{{ post.url | prepend: base_path }}">{{ post.title }}</a> <small>{{ post.date | date: '%m/%d/%Y' }}</small></h3>
     {% if image %}<img class="thumbnail" src="{{ post.image }}">{% endif %}
     {{ post.excerpt }}
@@ -13,4 +13,4 @@
     </div>
   </div>
 {% endfor %}
-</ul>
+</div>
